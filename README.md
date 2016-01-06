@@ -1,2 +1,2 @@
 # SynxPlugin
-Synx plugin for Xcode
+Synx plugin for Xcode 6.0+
