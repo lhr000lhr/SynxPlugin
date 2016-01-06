@@ -76,10 +76,10 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         CCPProject *project = [CCPProject projectForKeyWindow];
         if (project){
             
-            NSString *menuTitle = [NSString stringWithFormat:@"Synx \"%@.xcodeproj\"",project.projectName];
+            NSString *menuTitle = [NSString stringWithFormat:@"Syncing files in \"%@.xcodeproj\"",project.projectName];
             menuItem.title = menuTitle;
         } else {
-            menuItem.title = @"Synx Project";
+            menuItem.title = @"Syncing files in Project";
 
         }
      
@@ -98,7 +98,7 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         
         synxMenuItem.submenu = [[NSMenu alloc] initWithTitle:@"Synx"];
         //[synxMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-             self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Synx Project"
+             self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files in Project"
                                                             action:@selector(integrateSynx)
                                                      keyEquivalent:@""];
         
