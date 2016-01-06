@@ -1,0 +1,18 @@
+//
+//  TYDKSynxPlugin-Prefix.pch
+//  TYDKSynxPlugin
+//
+//  Created by 李浩然 on 1/6/16.
+//  Copyright © 2016 tydic-lhr. All rights reserved.
+//
+
+#ifndef TYDKSynxPlugin_Prefix_pch
+#define TYDKSynxPlugin_Prefix_pch
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+
+#import "CCPXCodeConsole.h"
+#endif
+
+#endif /* TYDKSynxPlugin_Prefix_pch */

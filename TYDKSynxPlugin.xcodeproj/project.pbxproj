@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC678ACB1C3CC50E00AF8192 /* CCPProject+SynxProject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC678ACA1C3CC50E00AF8192 /* CCPProject+SynxProject.m */; };
+		BC7FEA3F1C3CBE7B00525D07 /* CCPDocumentationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA321C3CBE7B00525D07 /* CCPDocumentationManager.m */; };
+		BC7FEA401C3CBE7B00525D07 /* CCPPathResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA341C3CBE7B00525D07 /* CCPPathResolver.m */; };
+		BC7FEA411C3CBE7B00525D07 /* CCPProject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA361C3CBE7B00525D07 /* CCPProject.m */; };
+		BC7FEA421C3CBE7B00525D07 /* CCPRunOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA381C3CBE7B00525D07 /* CCPRunOperation.m */; };
+		BC7FEA431C3CBE7B00525D07 /* CCPShellRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA3A1C3CBE7B00525D07 /* CCPShellRunner.m */; };
+		BC7FEA441C3CBE7B00525D07 /* CCPWorkspaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA3C1C3CBE7B00525D07 /* CCPWorkspaceManager.m */; };
+		BC7FEA451C3CBE7B00525D07 /* CCPXCodeConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA3E1C3CBE7B00525D07 /* CCPXCodeConsole.m */; };
+		BCBC00D81C3CA9B5009A2ACB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBC00D71C3CA9B5009A2ACB /* AppKit.framework */; };
+		BCBC00DA1C3CA9B5009A2ACB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBC00D91C3CA9B5009A2ACB /* Foundation.framework */; };
+		BCBC00DE1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = BCBC00DD1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme */; };
+		BCBC00E11C3CA9B5009A2ACB /* TYDKSynxPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC00E01C3CA9B5009A2ACB /* TYDKSynxPlugin.m */; };
+		BCBC00E41C3CA9B5009A2ACB /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC678AC91C3CC50E00AF8192 /* CCPProject+SynxProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CCPProject+SynxProject.h"; path = "../CCPProject+SynxProject.h"; sourceTree = "<group>"; };
+		BC678ACA1C3CC50E00AF8192 /* CCPProject+SynxProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CCPProject+SynxProject.m"; path = "../CCPProject+SynxProject.m"; sourceTree = "<group>"; };
+		BC7FEA311C3CBE7B00525D07 /* CCPDocumentationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPDocumentationManager.h; sourceTree = "<group>"; };
+		BC7FEA321C3CBE7B00525D07 /* CCPDocumentationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPDocumentationManager.m; sourceTree = "<group>"; };
+		BC7FEA331C3CBE7B00525D07 /* CCPPathResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPPathResolver.h; sourceTree = "<group>"; };
+		BC7FEA341C3CBE7B00525D07 /* CCPPathResolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPPathResolver.m; sourceTree = "<group>"; };
+		BC7FEA351C3CBE7B00525D07 /* CCPProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPProject.h; sourceTree = "<group>"; };
+		BC7FEA361C3CBE7B00525D07 /* CCPProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPProject.m; sourceTree = "<group>"; };
+		BC7FEA371C3CBE7B00525D07 /* CCPRunOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPRunOperation.h; sourceTree = "<group>"; };
+		BC7FEA381C3CBE7B00525D07 /* CCPRunOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPRunOperation.m; sourceTree = "<group>"; };
+		BC7FEA391C3CBE7B00525D07 /* CCPShellRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPShellRunner.h; sourceTree = "<group>"; };
+		BC7FEA3A1C3CBE7B00525D07 /* CCPShellRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPShellRunner.m; sourceTree = "<group>"; };
+		BC7FEA3B1C3CBE7B00525D07 /* CCPWorkspaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPWorkspaceManager.h; sourceTree = "<group>"; };
+		BC7FEA3C1C3CBE7B00525D07 /* CCPWorkspaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPWorkspaceManager.m; sourceTree = "<group>"; };
+		BC7FEA3D1C3CBE7B00525D07 /* CCPXCodeConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPXCodeConsole.h; sourceTree = "<group>"; };
+		BC7FEA3E1C3CBE7B00525D07 /* CCPXCodeConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPXCodeConsole.m; sourceTree = "<group>"; };
+		BC7FEA461C3CBF7B00525D07 /* TYDKSynxPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYDKSynxPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		BCBC00D41C3CA9B5009A2ACB /* TYDKSynxPlugin.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYDKSynxPlugin.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBC00D71C3CA9B5009A2ACB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		BCBC00D91C3CA9B5009A2ACB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		BCBC00DD1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = TYDKSynxPlugin.xcscheme; path = TYDKSynxPlugin.xcodeproj/xcshareddata/xcschemes/TYDKSynxPlugin.xcscheme; sourceTree = SOURCE_ROOT; };
+		BCBC00DF1C3CA9B5009A2ACB /* TYDKSynxPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDKSynxPlugin.h; sourceTree = "<group>"; };
+		BCBC00E01C3CA9B5009A2ACB /* TYDKSynxPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDKSynxPlugin.m; sourceTree = "<group>"; };
+		BCBC00E21C3CA9B5009A2ACB /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		BCBC00E51C3CA9B5009A2ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCBC00D21C3CA9B5009A2ACB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC00D81C3CA9B5009A2ACB /* AppKit.framework in Frameworks */,
+				BCBC00DA1C3CA9B5009A2ACB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC7FEA301C3CBE7B00525D07 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BC678AC91C3CC50E00AF8192 /* CCPProject+SynxProject.h */,
+				BC678ACA1C3CC50E00AF8192 /* CCPProject+SynxProject.m */,
+				BC7FEA311C3CBE7B00525D07 /* CCPDocumentationManager.h */,
+				BC7FEA321C3CBE7B00525D07 /* CCPDocumentationManager.m */,
+				BC7FEA331C3CBE7B00525D07 /* CCPPathResolver.h */,
+				BC7FEA341C3CBE7B00525D07 /* CCPPathResolver.m */,
+				BC7FEA351C3CBE7B00525D07 /* CCPProject.h */,
+				BC7FEA361C3CBE7B00525D07 /* CCPProject.m */,
+				BC7FEA371C3CBE7B00525D07 /* CCPRunOperation.h */,
+				BC7FEA381C3CBE7B00525D07 /* CCPRunOperation.m */,
+				BC7FEA391C3CBE7B00525D07 /* CCPShellRunner.h */,
+				BC7FEA3A1C3CBE7B00525D07 /* CCPShellRunner.m */,
+				BC7FEA3B1C3CBE7B00525D07 /* CCPWorkspaceManager.h */,
+				BC7FEA3C1C3CBE7B00525D07 /* CCPWorkspaceManager.m */,
+				BC7FEA3D1C3CBE7B00525D07 /* CCPXCodeConsole.h */,
+				BC7FEA3E1C3CBE7B00525D07 /* CCPXCodeConsole.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BCBC00CB1C3CA9B5009A2ACB = {
+			isa = PBXGroup;
+			children = (
+				BCBC00DB1C3CA9B5009A2ACB /* TYDKSynxPlugin */,
+				BCBC00D61C3CA9B5009A2ACB /* Frameworks */,
+				BCBC00D51C3CA9B5009A2ACB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCBC00D51C3CA9B5009A2ACB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC00D41C3CA9B5009A2ACB /* TYDKSynxPlugin.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCBC00D61C3CA9B5009A2ACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC00D71C3CA9B5009A2ACB /* AppKit.framework */,
+				BCBC00D91C3CA9B5009A2ACB /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCBC00DB1C3CA9B5009A2ACB /* TYDKSynxPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				BC7FEA301C3CBE7B00525D07 /* Helpers */,
+				BCBC00DF1C3CA9B5009A2ACB /* TYDKSynxPlugin.h */,
+				BCBC00E01C3CA9B5009A2ACB /* TYDKSynxPlugin.m */,
+				BCBC00E21C3CA9B5009A2ACB /* NSObject_Extension.h */,
+				BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */,
+				BCBC00E51C3CA9B5009A2ACB /* Info.plist */,
+				BCBC00DC1C3CA9B5009A2ACB /* Supporting Files */,
+			);
+			path = TYDKSynxPlugin;
+			sourceTree = "<group>";
+		};
+		BCBC00DC1C3CA9B5009A2ACB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC00DD1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme */,
+				BC7FEA461C3CBF7B00525D07 /* TYDKSynxPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCBC00D31C3CA9B5009A2ACB /* TYDKSynxPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCBC00E81C3CA9B5009A2ACB /* Build configuration list for PBXNativeTarget "TYDKSynxPlugin" */;
+			buildPhases = (
+				BCBC00D01C3CA9B5009A2ACB /* Sources */,
+				BCBC00D11C3CA9B5009A2ACB /* Resources */,
+				BCBC00D21C3CA9B5009A2ACB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYDKSynxPlugin;
+			productName = TYDKSynxPlugin;
+			productReference = BCBC00D41C3CA9B5009A2ACB /* TYDKSynxPlugin.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCBC00CC1C3CA9B5009A2ACB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "tydic-lhr";
+				TargetAttributes = {
+					BCBC00D31C3CA9B5009A2ACB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = BCBC00CF1C3CA9B5009A2ACB /* Build configuration list for PBXProject "TYDKSynxPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCBC00CB1C3CA9B5009A2ACB;
+			productRefGroup = BCBC00D51C3CA9B5009A2ACB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCBC00D31C3CA9B5009A2ACB /* TYDKSynxPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCBC00D11C3CA9B5009A2ACB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCBC00DE1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCBC00D01C3CA9B5009A2ACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC7FEA441C3CBE7B00525D07 /* CCPWorkspaceManager.m in Sources */,
+				BCBC00E11C3CA9B5009A2ACB /* TYDKSynxPlugin.m in Sources */,
+				BC7FEA401C3CBE7B00525D07 /* CCPPathResolver.m in Sources */,
+				BC7FEA3F1C3CBE7B00525D07 /* CCPDocumentationManager.m in Sources */,
+				BC678ACB1C3CC50E00AF8192 /* CCPProject+SynxProject.m in Sources */,
+				BCBC00E41C3CA9B5009A2ACB /* NSObject_Extension.m in Sources */,
+				BC7FEA431C3CBE7B00525D07 /* CCPShellRunner.m in Sources */,
+				BC7FEA451C3CBE7B00525D07 /* CCPXCodeConsole.m in Sources */,
+				BC7FEA421C3CBE7B00525D07 /* CCPRunOperation.m in Sources */,
+				BC7FEA411C3CBE7B00525D07 /* CCPProject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BCBC00E61C3CA9B5009A2ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		BCBC00E71C3CA9B5009A2ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		BCBC00E91C3CA9B5009A2ACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "TYDKSynxPlugin/TYDKSynxPlugin-Prefix.pch";
+				INFOPLIST_FILE = TYDKSynxPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = lee.TYDKSynxPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		BCBC00EA1C3CA9B5009A2ACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "TYDKSynxPlugin/TYDKSynxPlugin-Prefix.pch";
+				INFOPLIST_FILE = TYDKSynxPlugin/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = lee.TYDKSynxPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCBC00CF1C3CA9B5009A2ACB /* Build configuration list for PBXProject "TYDKSynxPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC00E61C3CA9B5009A2ACB /* Debug */,
+				BCBC00E71C3CA9B5009A2ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCBC00E81C3CA9B5009A2ACB /* Build configuration list for PBXNativeTarget "TYDKSynxPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCBC00E91C3CA9B5009A2ACB /* Debug */,
+				BCBC00EA1C3CA9B5009A2ACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCBC00CC1C3CA9B5009A2ACB /* Project object */;
+}
