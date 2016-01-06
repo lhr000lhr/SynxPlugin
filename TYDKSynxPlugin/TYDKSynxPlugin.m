@@ -60,8 +60,6 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
     //removeObserver
     [[NSNotificationCenter defaultCenter] removeObserver:self name:NSApplicationDidFinishLaunchingNotification object:nil];
     
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
     [self addMenuItems];
 }
 
@@ -75,6 +73,16 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
 - (BOOL)validateMenuItem:(NSMenuItem*)menuItem
 {
     if ([menuItem isEqual:self.synxXcodeprojItem]) {
+        CCPProject *project = [CCPProject projectForKeyWindow];
+        if (project){
+            
+            NSString *menuTitle = [NSString stringWithFormat:@"Synx \"%@.xcodeproj\"",project.projectName];
+            menuItem.title = menuTitle;
+        } else {
+            menuItem.title = @"Synx Project";
+
+        }
+     
         return [[CCPProject projectForKeyWindow] hasProject];
     }
     
@@ -90,8 +98,7 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         
         synxMenuItem.submenu = [[NSMenu alloc] initWithTitle:@"Synx"];
         //[synxMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-        
-        self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Synx Project"
+             self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Synx Project"
                                                             action:@selector(integrateSynx)
                                                      keyEquivalent:@""];
         
@@ -107,17 +114,17 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
     }
 
 }
-// Sample Action, for menu item:
+
+
 - (void)doMenuAction
 {
-//    NSAlert *alert = [[NSAlert alloc] init];
-//    [alert setMessageText:@"Hello, World"];
-//    [alert runModal];
+
 }
 
-- (void)integrateSynx {
+- (void)integrateSynx
+{
     
-    NSString* const CPFallbackPodPath = @"/usr/local/bin";
+    NSString* const CPFallbackSynxPath = @"/usr/local/bin";
     CCPProject* project = [CCPProject projectForKeyWindow];
     BOOL isDir;
     BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:project.workspacePath isDirectory:&isDir];
@@ -125,7 +132,7 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
     NSString* resolvedCommand = [CCPPathResolver resolveCommand:SYNX_EXECUTABLE forPath:expandedGemPath];
     
     if (resolvedCommand == nil) {
-        resolvedCommand = [CCPPathResolver resolveCommand:SYNX_EXECUTABLE forPath:CPFallbackPodPath];
+        resolvedCommand = [CCPPathResolver resolveCommand:SYNX_EXECUTABLE forPath:CPFallbackSynxPath];
         if (resolvedCommand == nil) {
             NSAlert* alert = [[NSAlert alloc] init];
             [alert setAlertStyle:NSCriticalAlertStyle];
@@ -140,12 +147,9 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
                            withArgs:@[@"--no-color" ,[project projectPath]]
                           directory:[CCPWorkspaceManager currentWorkspaceDirectoryPath]
                          completion:^(NSTask* t) {
-//                             if ([self shouldInstallDocsForPods])
-//                                 [self installOrUpdateDocSetsForPods];
                              // Only prompt if this is the first time
                              if (!fileExists || !isDir) {
                                  dispatch_async(dispatch_get_main_queue(), ^{
-//                                     [self showReopenWorkspaceMessageForProject:project];
                                      
                                      NSAlert *alert = [[NSAlert alloc] init];
                                      [alert setMessageText:@"成功"];
