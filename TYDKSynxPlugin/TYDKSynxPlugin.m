@@ -82,10 +82,17 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         CCPProject *project = [CCPProject projectForKeyWindow];
         if (project){
             
+<<<<<<< HEAD
             NSString *menuTitle = [NSString stringWithFormat:@"Syncing files in \"%@.xcodeproj\"",project.projectName];
             self.synxXcodeprojItem.title = menuTitle;
         } else {
             self.synxXcodeprojItem.title = @"Syncing files in Project";
+=======
+            NSString *menuTitle = [NSString stringWithFormat:@"Synx \"%@.xcodeproj\"",project.projectName];
+            menuItem.title = menuTitle;
+        } else {
+            menuItem.title = @"Synx Project";
+>>>>>>> parent of 701fed1... 修改按钮名称
 
         }
      
@@ -104,6 +111,7 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         
         synxMenuItem.submenu = [[NSMenu alloc] initWithTitle:@"Synx"];
         //[synxMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
+<<<<<<< HEAD
         self.synxXcodeprojItem = ({
         
        
@@ -113,6 +121,11 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
             [[synxMenuItem submenu] addItem:menuItem];
 
             menuItem;
+=======
+             self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Synx Project"
+                                                            action:@selector(integrateSynx)
+                                                     keyEquivalent:@""];
+>>>>>>> parent of 701fed1... 修改按钮名称
         
         
         });
