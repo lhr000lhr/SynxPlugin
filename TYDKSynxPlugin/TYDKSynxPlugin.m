@@ -78,14 +78,14 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
 
 - (BOOL)validateMenuItem:(NSMenuItem*)menuItem
 {
-    if ([menuItem isEqual:self.synxXcodeprojItem]) {
+    if ([menuItem isEqual:self.synxXcodeprojItem] || [menuItem isEqual:self.synxXcodeprojWithAdvenceItem]) {
         CCPProject *project = [CCPProject projectForKeyWindow];
         if (project){
             
             NSString *menuTitle = [NSString stringWithFormat:@"Syncing files in \"%@.xcodeproj\"",project.projectName];
-            menuItem.title = menuTitle;
+            self.synxXcodeprojItem.title = menuTitle;
         } else {
-            menuItem.title = @"Syncing files in Project";
+            self.synxXcodeprojItem.title = @"Syncing files in Project";
 
         }
      
@@ -110,6 +110,8 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
             NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files in Project" action:@selector(integrateSynx) keyEquivalent:@""];
             
             [menuItem setTarget:self];
+            [[synxMenuItem submenu] addItem:menuItem];
+
             menuItem;
         
         
@@ -117,17 +119,17 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         
         self.synxXcodeprojWithAdvenceItem = ({
             
-            
-            NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files with advence option" action:@selector(advenceOption) keyEquivalent:@""];
+            NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Advence Option" action:@selector(advenceOption) keyEquivalent:@""];
             
             [menuItem setTarget:self];
+            [[synxMenuItem submenu] addItem:menuItem];
+
             menuItem;
             
             
         });
         
         [synxMenuItem setTarget:self];
-        [[synxMenuItem submenu] addItem:self.synxXcodeprojItem];
         
         [[topMenuItem submenu] addItem:synxMenuItem];
         
