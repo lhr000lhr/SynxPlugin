@@ -20,6 +20,8 @@
 		BCBC00DE1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = BCBC00DD1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme */; };
 		BCBC00E11C3CA9B5009A2ACB /* TYDKSynxPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC00E01C3CA9B5009A2ACB /* TYDKSynxPlugin.m */; };
 		BCBC00E41C3CA9B5009A2ACB /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */; };
+		BCDF83AF1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDF83AD1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m */; };
+		BCDF83B01C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDF83AE1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,9 @@
 		BCBC00E21C3CA9B5009A2ACB /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
 		BCBC00E51C3CA9B5009A2ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDF83AC1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDKFilePickerWindowsController.h; sourceTree = "<group>"; };
+		BCDF83AD1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDKFilePickerWindowsController.m; sourceTree = "<group>"; };
+		BCDF83AE1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TYDKFilePickerWindowsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,9 @@
 				BCBC00E01C3CA9B5009A2ACB /* TYDKSynxPlugin.m */,
 				BCBC00E21C3CA9B5009A2ACB /* NSObject_Extension.h */,
 				BCBC00E31C3CA9B5009A2ACB /* NSObject_Extension.m */,
+				BCDF83AC1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.h */,
+				BCDF83AD1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m */,
+				BCDF83AE1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib */,
 				BCBC00E51C3CA9B5009A2ACB /* Info.plist */,
 				BCBC00DC1C3CA9B5009A2ACB /* Supporting Files */,
 			);
@@ -193,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBC00DE1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme in Resources */,
+				BCDF83B01C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +218,7 @@
 				BC7FEA3F1C3CBE7B00525D07 /* CCPDocumentationManager.m in Sources */,
 				BC678ACB1C3CC50E00AF8192 /* CCPProject+SynxProject.m in Sources */,
 				BCBC00E41C3CA9B5009A2ACB /* NSObject_Extension.m in Sources */,
+				BCDF83AF1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m in Sources */,
 				BC7FEA431C3CBE7B00525D07 /* CCPShellRunner.m in Sources */,
 				BC7FEA451C3CBE7B00525D07 /* CCPXCodeConsole.m in Sources */,
 				BC7FEA421C3CBE7B00525D07 /* CCPRunOperation.m in Sources */,

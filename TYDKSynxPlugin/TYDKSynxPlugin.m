@@ -14,6 +14,9 @@
 #import "CCPWorkspaceManager.h"
 #import "CCPProject+SynxProject.h"
 
+#import "TYDKFilePickerWindowsController.h"
+
+
 static NSString* const GEM_EXECUTABLE = @"gem";
 static NSString* const GEM_PATH_DEFAULT = @"/usr/bin";
 static NSString* const GEM_PATH_KEY = @"GEM_PATH_KEY";
@@ -28,6 +31,9 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
 
 @property (nonatomic, strong) NSMenuItem *synxXcodeprojItem;
+@property (nonatomic, strong) NSMenuItem *synxXcodeprojWithAdvenceItem;
+
+@property (strong,nonatomic) TYDKFilePickerWindowsController *showViewController;
 
 @end
 
@@ -98,12 +104,27 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
         
         synxMenuItem.submenu = [[NSMenu alloc] initWithTitle:@"Synx"];
         //[synxMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-             self.synxXcodeprojItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files in Project"
-                                                            action:@selector(integrateSynx)
-                                                     keyEquivalent:@""];
+        self.synxXcodeprojItem = ({
         
-        [self.synxXcodeprojItem setTarget:self];
+       
+            NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files in Project" action:@selector(integrateSynx) keyEquivalent:@""];
+            
+            [menuItem setTarget:self];
+            menuItem;
         
+        
+        });
+        
+        self.synxXcodeprojWithAdvenceItem = ({
+            
+            
+            NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Syncing files with advence option" action:@selector(advenceOption) keyEquivalent:@""];
+            
+            [menuItem setTarget:self];
+            menuItem;
+            
+            
+        });
         
         [synxMenuItem setTarget:self];
         [[synxMenuItem submenu] addItem:self.synxXcodeprojItem];
@@ -162,6 +183,12 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
 
 }
 
+- (void)advenceOption {
+    
+    self.showViewController = [[TYDKFilePickerWindowsController alloc] initWithWindowNibName:NSStringFromClass([TYDKFilePickerWindowsController class])];
+    [self.showViewController showWindow:self.showViewController];
+    
+}
 
 
 #pragma mark - Preferences
