@@ -26,10 +26,14 @@ static NSString* const RESOLVER_ERROR_FORMAT = @"Resolved command path for \"%@\
 static NSString* const RESOLVER_TITLE_TEXT = @"The command path could not be resolved";
 static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
 
-@interface TYDKSynxPlugin()
+@interface TYDKSynxPlugin() <NSTextFieldDelegate>
+
+@property (nonatomic, strong) IBOutlet NSTextField* pathField;
+@property (nonatomic, strong) IBOutlet NSView* pathView;
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
 
+@property (nonatomic, strong) NSMenuItem *pathItem;
 @property (nonatomic, strong) NSMenuItem *synxXcodeprojItem;
 @property (nonatomic, strong) NSMenuItem *synxXcodeprojWithAdvenceItem;
 
@@ -122,22 +126,57 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
             NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Advence Option" action:@selector(advenceOption) keyEquivalent:@""];
             
             [menuItem setTarget:self];
-            [[synxMenuItem submenu] addItem:menuItem];
+//            [[synxMenuItem submenu] addItem:menuItem];
 
+         
             menuItem;
             
             
         });
         
+        
+        [[self bundle] loadNibNamed:@"SynxPathView" owner:self topLevelObjects:nil];
+        self.pathItem = ({
+          NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Set SYNX_PATH"
+                                       action:@selector(setPATH)
+                                keyEquivalent:@""];
+            
+            [self.pathField.cell setPlaceholderString:GEM_PATH_DEFAULT];
+            
+            if ([self customGemPath].length > 0) {
+                self.pathField.stringValue = [self customGemPath];
+            }
+            
+            [menuItem setView:self.pathView];
+            [menuItem setTarget:self];
+            
+            
+            [[synxMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+            [[synxMenuItem submenu] addItem:menuItem];
+            
+            
+            menuItem;
+
+        
+        });
+        
+        
+        
         [synxMenuItem setTarget:self];
         
         [[topMenuItem submenu] addItem:synxMenuItem];
         
-        
+     
     }
 
 }
 
+- (BOOL)control:(NSControl*)control textShouldEndEditing:(NSText*)fieldEditor
+{
+    NSLog(@"endEditing : %@", fieldEditor.string);
+    [self updateGemPath:fieldEditor.string];
+    return YES;
+}
 
 - (void)doMenuAction
 {
@@ -171,16 +210,16 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
                           directory:[CCPWorkspaceManager currentWorkspaceDirectoryPath]
                          completion:^(NSTask* t) {
                              // Only prompt if this is the first time
-                             if (!fileExists || !isDir) {
-                                 dispatch_async(dispatch_get_main_queue(), ^{
-                                     
-                                     NSAlert *alert = [[NSAlert alloc] init];
-                                     [alert setMessageText:@"成功"];
-                                     [alert runModal];
-                                     
-                                     
-                                 });
-                             }
+//                             if (!fileExists || !isDir) {
+//                                 dispatch_async(dispatch_get_main_queue(), ^{
+//                                     
+//                                     NSAlert *alert = [[NSAlert alloc] init];
+//                                     [alert setMessageText:@"成功"];
+//                                     [alert runModal];
+//                                     
+//                                     
+//                                 });
+//                             }
                          }];
 
 }
@@ -192,6 +231,15 @@ static NSString* const XAR_EXECUTABLE = @"/usr/bin/xar";
     
 }
 
+
+- (void)showResolverErrorForExecutable:(NSString*)executable expandedPath:(NSString*)expandedPath
+{
+    NSAlert* alert = [[NSAlert alloc] init];
+    [alert setAlertStyle:NSCriticalAlertStyle];
+    [alert setMessageText:RESOLVER_TITLE_TEXT];
+    [alert setInformativeText:[NSString stringWithFormat:RESOLVER_ERROR_FORMAT, executable, expandedPath]];
+    [alert runModal];
+}
 
 #pragma mark - Preferences
 

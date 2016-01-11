@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC678ACB1C3CC50E00AF8192 /* CCPProject+SynxProject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC678ACA1C3CC50E00AF8192 /* CCPProject+SynxProject.m */; };
+		BC7D9DAA1C43572A003EBB6C /* SynxPathView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC7D9DA91C43572A003EBB6C /* SynxPathView.xib */; };
 		BC7FEA3F1C3CBE7B00525D07 /* CCPDocumentationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA321C3CBE7B00525D07 /* CCPDocumentationManager.m */; };
 		BC7FEA401C3CBE7B00525D07 /* CCPPathResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA341C3CBE7B00525D07 /* CCPPathResolver.m */; };
 		BC7FEA411C3CBE7B00525D07 /* CCPProject.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7FEA361C3CBE7B00525D07 /* CCPProject.m */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		BC678AC91C3CC50E00AF8192 /* CCPProject+SynxProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CCPProject+SynxProject.h"; path = "../CCPProject+SynxProject.h"; sourceTree = "<group>"; };
 		BC678ACA1C3CC50E00AF8192 /* CCPProject+SynxProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CCPProject+SynxProject.m"; path = "../CCPProject+SynxProject.m"; sourceTree = "<group>"; };
+		BC7D9DA91C43572A003EBB6C /* SynxPathView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SynxPathView.xib; sourceTree = "<group>"; };
 		BC7FEA311C3CBE7B00525D07 /* CCPDocumentationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPDocumentationManager.h; sourceTree = "<group>"; };
 		BC7FEA321C3CBE7B00525D07 /* CCPDocumentationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPDocumentationManager.m; sourceTree = "<group>"; };
 		BC7FEA331C3CBE7B00525D07 /* CCPPathResolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPPathResolver.h; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BCDF83AC1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.h */,
 				BCDF83AD1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.m */,
 				BCDF83AE1C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib */,
+				BC7D9DA91C43572A003EBB6C /* SynxPathView.xib */,
 				BCBC00E51C3CA9B5009A2ACB /* Info.plist */,
 				BCBC00DC1C3CA9B5009A2ACB /* Supporting Files */,
 			);
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7D9DAA1C43572A003EBB6C /* SynxPathView.xib in Resources */,
 				BCBC00DE1C3CA9B5009A2ACB /* TYDKSynxPlugin.xcscheme in Resources */,
 				BCDF83B01C3E4070004AC4E9 /* TYDKFilePickerWindowsController.xib in Resources */,
 			);
